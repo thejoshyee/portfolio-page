@@ -127,7 +127,6 @@ footer {
   display: table;
 }
 
-
 @media (max-width: 767px) {
   p {
     margin: 7%;
@@ -145,14 +144,12 @@ img {
 }
 }
 
-
   /* Styles for larger screens */
 
   @media (min-width: 768px) {
 
     h1 {
       font-size: 3em;
-
     }
 
   nav li {
@@ -221,11 +218,8 @@ img {
   }
   }
 
-
-
   @media (min-width: 1024px) {
     
-
     h1 {
       float: left;
       display: inline-block;
@@ -238,14 +232,14 @@ img {
       font-size: 1em;
     }
 
-    main.portfolio.clearfix {
+    .portfolio {
+      display: inline-block;
       margin: 0px auto;
-      width: 90%;
+      clear: none;
     }
 
     h3 {
       font-size: 1.5em;
-
     }
 
     h4 {
@@ -265,13 +259,11 @@ img {
 
     .container.clearfix {
       display: inline-block;
-
     }
 
     .col {
       width: calc(33.333% - 20px);
       padding: 10px;
-
     }
-
   }
+
