@@ -4,33 +4,21 @@
     list-style-type: none;
 
   }
-  body {
-    color: #797e83;
-    font-size: 16px;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5;
-    text-align: center;
 
-
-  }
-  
   /* Nav Styles */
-  
 
-  ul {
+  nav ul {
     padding: 0px;
   }
 
   nav li {
     font-size: 1.5em;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 400;
     background: white;
-  }
-
-  li {
+    margin: 0px 20px 0px 20px;
     border-bottom: 5px solid rgb(248, 248, 248);
+    text-transform: lowercase;
   }
 
   a {
@@ -39,7 +27,7 @@
   }
 
   a:visited {
-    color: #797e83;
+    color: #282a2b;
   }
 
   a:hover {
@@ -48,7 +36,7 @@
 
   }
   
-  /* Section Styles */
+  /* Header Styles */
 
   header {
     background-color: rgb(248, 248, 248);
@@ -57,7 +45,8 @@
   h1{
     padding: 17px 0px 0px 0px;
     margin: 0px;
-    font-size: 2.5em;
+    font-size: 2em;
+    text-transform: uppercase;
   }
 
   .profile-image {
@@ -67,195 +56,222 @@
     padding-bottom: 5px;
   }
 
-  main {
-    padding: 0px 25px 0px 25px;
+  /* Main Styles */
 
+  body {
+    display: flex;
+    flex-direction: column;
+    color: #282a2b;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0px;
   }
-  
 
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-transform: uppercase;
     padding: 25px;
   }
 
-  .intro {
-    padding-bottom: 50px;
-    font-size: 1.2em;
-    margin: 35px;
-
-  }
-
-  .marketing-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .search-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .travel-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .map-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .gallery-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .calculator-image {
-    height: auto;
-    width: 100%;
-  }
-
-  .calc {
-    padding-bottom: 50px;
-
-  }
-
-  h4 {
-    font-size: 1.2em;
-  }
-
-  .calc-div {
-    padding-bottom: 35px;
-  }
+img {
+  max-width: 100%;
+}
 
 .contact {
-  padding-top: 35px;
   background-color: rgb(248, 248, 248);
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
 
 a[href*="mailto:"] {
   font-weight: bold;
 }
 
+footer {
+  margin: 0px;
+  padding: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
 .left-name {
   float: left;
   display: inline-block;
-  margin: 0px;
   font-weight: bold;
+  margin: 0px;
 }
 
 .right-backtotop {
   float: right;
   display: inline-block;
-  margin: 0px;
+  margin: 0px 0px 0px 20px;
   font-weight: bold;
 }
 
-.contact-pad{
-  padding-bottom: 50px;
+.right {
+  display: none;
+}
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
-.clearfix {
-  overflow: auto;
+@media (max-width: 767px) {
+  p {
+    margin: 7%;
+    font-size: 1.3em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+img {
+  max-width: 90%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
+}
+
 
   /* Styles for larger screens */
 
   @media (min-width: 768px) {
 
+    h1 {
+      font-size: 3em;
+
+    }
+
   nav li {
     display: inline-block;
     background: none;
     padding: 0px 35px 0px 35px;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 1.5em;
   }
 
-header p {
-  float: left;
-  width: 45%;
-  height: 100%;
-  text-align: left;
-  margin: 0px;
-}
+  header p {
+    float: left;
+    width: 45%;
+    height: 100%;
+    text-align: left;
+    padding: 0px;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 0px;
+  }
 
-.container img {
-  float: right;
-  width: 50%;
-  padding: 0px;
-}
+  .profile-image {
+    float: right;
+    width: 49%;
+    padding: 0px;
+  }
 
-.container {
-  width: 90%;
-  margin: 20px auto 20px auto;
-  padding: 0px 0px 0px 0px;
-}
+  .container.clearfix {
+    padding-bottom: 45px;
+    width: 90%;
+    margin: 2% auto;
+  }
 
-div.container.clearfix {
-  padding: 10px 0px 50px 0px;
-}
+  .portfolio {
+    font-size: 1.3em;
+    width: 95%;
+    margin: 0 auto;
+  }
 
-main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0px;
-}
-    
-.marketing.col {
-  float: left;
-  width: 49%;
-  padding: 0px 0px 0px 0px;
-}
+  .col {
+      float: left;
+      width: calc(50% - 20px);
+      display: block;
+      margin: 20px 10px 20px 10px;
+    }
 
-.search.col {
-  float: right;
-  width: 49%;
-  padding: 0px;
-}
+  .small-nav p {
+    display: none;
+  }
 
-.travel.col {
-  float: left;
-  width: 49%;
-  padding: 0px 0px 0px 0px;
-}
+  .bottom {
+    padding: 0 2%;
+    display: inline-block;
+  }
 
-.map.col {
-  float: right;
-  width: 49%;
-  padding: 0px;
-}
+  .right {
+    float: right;
+    margin-right: 5px;
+    font-weight: bold;
+  }
 
-.gallery.col {
-  float: left;
-  width: 49%;
-  padding: 0px 0px 0px 0px;
-}
-
-.calc.col {
-  float: right;
-  width: 49%;
-  padding: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .left-name {
+    float: left;
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+  }
+  }
 
 
 
   @media (min-width: 1024px) {
+    
 
+    h1 {
+      float: left;
+      display: inline-block;
+      margin-left: 4%;
+      font-weight: bold;
+      padding: 0px 0px 0px 20px;
+    }
+
+    body {
+      font-size: 1em;
+    }
+
+    main.portfolio.clearfix {
+      margin: 0px auto;
+      width: 90%;
+    }
+
+    h3 {
+      font-size: 1.5em;
+
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+    
+    nav ul {
+      float: right;
+      display: inline-block;
+      width: 50%;
+      font-weight: bold;
+    }
+    
+    .clearfix {
+      padding-top: 20px;
+    }
+
+    .container.clearfix {
+      display: inline-block;
+
+    }
+
+    .col {
+      width: calc(33.333% - 20px);
+      padding: 10px;
+
+    }
 
   }
