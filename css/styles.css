@@ -85,7 +85,7 @@ img {
 h3 {
   font-size: 2em;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 a[href*="mailto:"] {
@@ -220,10 +220,6 @@ img {
 
   @media (min-width: 1024px) {
     
-    body {
-      font-size: 1.5em;
-    }
-
     h1 {
       float: left;
       display: inline-block;
@@ -250,6 +246,10 @@ img {
       display: inline-block;
     }
 
+    .top-col {
+      font-size: 2em;
+    }
+
     .portfolio {
       display: inline-block;
       margin: 0px auto;
@@ -268,9 +268,26 @@ img {
       padding-top: 20px;
     }
 
+    .row-1 {
+      display: inline-block;
+    }
+
+    .row-2 {
+      display: inline-block;
+    }
+      
     .col {
       width: calc(33.333% - 20px);
       padding: 10px;
     }
+
+    .skills-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      padding-bottom: 30px;
+    }
+
   }
 
