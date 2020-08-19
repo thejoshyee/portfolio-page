@@ -2,23 +2,17 @@
 * { 
     box-sizing: border-box;
     list-style-type: none;
-
   }
 
   /* Nav Styles */
-
-  nav ul {
-    padding: 0px;
-  }
 
   nav li {
     font-size: 1.5em;
     padding: 10px;
     font-weight: 400;
     background: white;
-    margin: 0px 20px 0px 20px;
-    border-bottom: 5px solid rgb(248, 248, 248);
     text-transform: lowercase;
+    margin: 0px 20px 5px 20px;
   }
 
   a {
@@ -45,22 +39,22 @@
   h1{
     padding: 25px 0px 25px 0px;
     margin: 0px;
-    font-size: 2em;
+    font-size: 3em;
     text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive, sans-serif;
+
   }
 
   .profile-image {
     width: 75%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 5px;
   }
 
   /* Main Styles */
 
   body {
-    display: flex;
-    flex-direction: column;
     color: #282a2b;
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
@@ -71,7 +65,8 @@
   h2 {
     font-size: 2em;
     text-transform: uppercase;
-    padding: 25px;
+    padding: 15px 0px 15px 0px;
+    margin: 15px 0px 0px 0px;
   }
 
 img {
@@ -85,11 +80,12 @@ img {
 h3 {
   font-size: 2em;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
-a[href*="mailto:"] {
-  font-weight: bold;
+.skills-header {
+  padding-top: 0px;
+  margin: 30px 0px;
 }
 
 ul {
@@ -127,13 +123,15 @@ footer {
   display: table;
 }
 
+  /* Additional Mobile Styles */
+
 @media (max-width: 767px) {
-  p {
-    margin: 7%;
-    font-size: 1.3em;
+p {
+  margin: 7%;
+  font-size: 1.3em;
   }
 
-  h4 {
+h4 {
     font-size: 1.5em;
   }
 
@@ -142,15 +140,23 @@ img {
   padding-top: 3%;
   padding-bottom: 3%;
 }
+
+.contact-list {
+  font-size: 1.3em;
+}
+
+footer.clearfix {
+  padding: 40px 20px 20px 20px;
+  }
 }
 
   /* Styles for larger screens */
 
   @media (min-width: 768px) {
 
-    h1 {
-      font-size: 3em;
-    }
+  h1 {
+    font-size: 3em;
+  }
 
   nav li {
     display: inline-block;
@@ -177,6 +183,11 @@ img {
     padding: 0px;
   }
 
+  h2 {
+    padding: 15px;
+    margin: 15px 0px 0px 0px;
+  }
+
   .container.clearfix {
     padding-bottom: 45px;
     width: 90%;
@@ -192,9 +203,24 @@ img {
   .col {
       float: left;
       width: calc(50% - 20px);
-      display: block;
       margin: 20px 10px 20px 10px;
-    }
+  }
+
+  h3#contact {
+  margin-top: 60px;
+  padding-top: 50px;
+}
+
+  .contact-info,
+  .contact-list {
+    padding: 0px 30px 30px 30px;
+    margin: 0px 100px;
+    font-size: 1.3em;
+  }
+
+  .skills-image {
+    width: 50%;
+  }
 
   .small-nav p {
     display: none;
@@ -203,6 +229,7 @@ img {
   .bottom {
     padding: 0 2%;
     display: inline-block;
+    font-size: 1.5em;
   }
 
   .right {
@@ -215,14 +242,14 @@ img {
     float: left;
     display: inline-block;
     margin: 0px 0px 0px 20px;
+    font-size: 1.5em;
   }
-  }
+}
 
   @media (min-width: 1024px) {
     
     h1 {
       float: left;
-      display: inline-block;
       margin-left: 4%;
       font-weight: bold;
       padding: 0px;
@@ -230,14 +257,13 @@ img {
 
     nav ul {
       float: right;
-      display: inline-block;
       width: 50%;
       font-weight: bold;
       margin-top: 10px;
+      font-size: 1.3em;
     }
 
     nav li {
-      display: inline-block;
       padding: 0px;
       font-weight: bold;
     }
@@ -250,14 +276,12 @@ img {
       font-size: 2em;
     }
 
-    .portfolio {
-      display: inline-block;
-      margin: 0px auto;
-      clear: none;
+    h2 {
+      padding-top: 45px;
     }
-
+    
     h3 {
-      font-size: 1.5em;
+      font-size: 2em;
     }
 
     h4 {
@@ -286,8 +310,23 @@ img {
       margin-left: auto;
       margin-right: auto;
       width: 30%;
-      padding-bottom: 30px;
+      padding: 30px 0px 30px 0px;
     }
 
+    .contact {
+      padding-bottom: 20px;
+    }
+
+    .contact-list li {
+      padding: 10px;
+    }
+
+    .right.bottom {
+      font-size: 1.5em;
+    }
+
+    .left-name {
+      font-size: 1.5em;
+    }
   }
 
