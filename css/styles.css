@@ -261,9 +261,8 @@ li.bottom.right {
 
     nav ul {
       float: right;
-      width: 50%;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 15px 30px 0px 0px;
       font-size: 1.3em;
     }
 
