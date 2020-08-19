@@ -64,13 +64,11 @@
 
   p {
     font-size: 1.3em;
-    padding: 0px 25px 25px 25px;
     margin: 25px;
     }
 
   p.top-col {
     padding: 0px 25px 25px 25px;
-    margin: 25px;
   }
   
 
@@ -171,7 +169,6 @@ footer.clearfix {
   }
 
   header p {
-    float: left;
     width: 45%;
     height: 100%;
     text-align: left;
@@ -222,7 +219,7 @@ p {
   .contact-info,
   .contact-list {
     padding: 0px 30px 30px 30px;
-    margin: 0px 100px;
+    margin: 0 5%;
     font-size: 1.3em;
   }
 
@@ -234,23 +231,22 @@ p {
     display: none;
   }
 
-  .bottom {
-    padding: 0 2%;
-    display: inline-block;
-    font-size: 1.5em;
-  }
+ul.bottom-nav {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .right {
-    float: right;
-    margin-right: 5px;
-    font-weight: bold;
-  }
+li.bottom.right {
+  margin-right: 35px;
+  font-weight: bold;
+  display: inline;
+  font-size: 1.5em;
+}
 
-  .left-name {
-    float: left;
-    display: inline-block;
-    margin: 0px 0px 0px 20px;
-    font-size: 1.5em;
+.left-name {
+  display: flex;
+  margin: 0px 0px 0px 20px;
+  font-size: 1.5em;
   }
 }
 
@@ -281,11 +277,11 @@ p {
     }
 
     .top-col {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     p {
-      padding: 0px 35px 0px 35px;
+      padding: 0px 5px 0px 5px;
     }
 
     h2 {
