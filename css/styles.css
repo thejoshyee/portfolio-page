@@ -62,6 +62,18 @@
     margin: 0px;
   }
 
+  p {
+    font-size: 1.3em;
+    padding: 0px 25px 25px 25px;
+    margin: 25px;
+    }
+
+  p.top-col {
+    padding: 0px 25px 25px 25px;
+    margin: 25px;
+  }
+  
+
   h2 {
     font-size: 2em;
     text-transform: uppercase;
@@ -123,14 +135,6 @@ footer {
   display: table;
 }
 
-  /* Additional Mobile Styles */
-
-@media (max-width: 767px) {
-p {
-  margin: 7%;
-  font-size: 1.3em;
-  }
-
 h4 {
     font-size: 1.5em;
   }
@@ -148,7 +152,7 @@ img {
 footer.clearfix {
   padding: 40px 20px 20px 20px;
   }
-}
+
 
   /* Styles for larger screens */
 
@@ -176,6 +180,10 @@ footer.clearfix {
     font-weight: 100;
     margin-top: 0px;
   }
+
+p {
+  font-size: 1em;
+}
 
   .profile-image {
     float: right;
@@ -276,6 +284,10 @@ footer.clearfix {
       font-size: 2em;
     }
 
+    p {
+      padding: 0px 35px 0px 35px;
+    }
+
     h2 {
       padding-top: 45px;
     }
@@ -302,7 +314,6 @@ footer.clearfix {
       
     .col {
       width: calc(33.333% - 20px);
-      padding: 10px;
     }
 
     .skills-image {
