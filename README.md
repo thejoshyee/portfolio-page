@@ -1,2 +1,2 @@
-# techdegree-project-2
+# portfolio-page
  Portfolio Page for Techdegree Project 2
